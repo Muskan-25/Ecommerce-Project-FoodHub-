@@ -1,0 +1,123 @@
+ /*  --------payment------------*/
+input.checkbox {
+	background: #64b3f4;
+	cursor: pointer;
+	width: 1.2em;
+	height: 1.2em;
+	display: inline-block;
+	margin-left: 10%;
+	vertical-align: text-bottom;
+}
+input.checkbox:before {
+	content: "";
+	position: absolute;
+	width: 1.2em;
+	height: 1.2em;
+	background: inherit;
+	cursor: pointer;
+}
+
+input.checkbox:after {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0;
+	z-index: 1;
+	width: 1.2em;
+	height: 1.2em;
+	border: 1px solid #fff;
+	transition: .4s ease-in-out;
+	-webkit-transition: .4s ease-in-out;
+	-moz-transition: .4s ease-in-out;
+	-o-transition: .4s ease-in-out;
+	-ms-transition: .4s ease-in-out;
+}
+
+input.checkbox:checked:after {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	height: 1.2em;
+	border-color: #fff;
+	border-top-color: transparent;
+	border-right-color: transparent;
+}
+
+.anim input.checkbox:checked:after {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	height: .6em;
+	border-color: transparent;
+	border-right-color: transparent;
+	animation: .4s rippling .4s ease;
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes rippling {
+	50% {
+		border-left-color: #fff;
+	}
+	100% {
+		border-bottom-color: #fff;
+		border-left-color: #fff;
+	}
+}
+
+.vertical_post.check_box_fpay {
+	padding-bottom: 1em;
+}
+
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+	margin-left: -29px;
+}
+
+/*--------//payment------------*/
+
+
+.tab-content{
+	border: 1px solid #c1c1c1;
+} 
+
+
+/*---------footer----------*/
+.footer {
+    background-color: #000;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 30px;
+}
+
+
+/*------//footer-----------*/
+
+
+ul.nav.nav-tabs,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav-item li {
+  font-weight: 500;
+  font-size: 19px;
+  display: inline-block;
+  padding: 13px 15px;
+  margin: 0;
+  list-style: none;
+  cursor: pointer;
+  float: left;
+  text-transform: capitalize;
+}

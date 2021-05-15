@@ -1,0 +1,12 @@
+@media screen and (max-width : 360px){
+	
+	i#carticon{
+		align-content: flex-end;
+		align-items: flex-end;
+		float : right;
+	}
+	.cart-mainf{
+	float:right;
+	justify-content: flex-end;
+	}
+}
